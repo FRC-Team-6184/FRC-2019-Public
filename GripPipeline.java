@@ -38,7 +38,7 @@ public class GripPipeline implements VisionPipeline {
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 	}
 
-	/**
+	/**[]\
 	 * This is the primary method that runs the entire pipeline and updates the outputs.
 	 */
 	@Override	public void process(Mat source0) {
@@ -51,9 +51,9 @@ public class GripPipeline implements VisionPipeline {
 
 		// Step HSV_Threshold0:
 		Mat hsvThresholdInput = resizeImageOutput;
-		double[] hsvThresholdHue = {32.37410071942446, 72.42424242424244};
-		double[] hsvThresholdSaturation = {0.0, 12.878787367030828};
-		double[] hsvThresholdValue = {229.31654676258992, 255.0};
+		double[] hsvThresholdHue = {0, 94};
+		double[] hsvThresholdSaturation = {110, 255};
+		double[] hsvThresholdValue = {101, 255.0};
 		hsvThreshold(hsvThresholdInput, hsvThresholdHue, hsvThresholdSaturation, hsvThresholdValue, hsvThresholdOutput);
 
 		// Step Find_Contours0:
@@ -63,12 +63,12 @@ public class GripPipeline implements VisionPipeline {
 
 		// Step Filter_Contours0:
 		ArrayList<MatOfPoint> filterContoursContours = findContoursOutput;
-		double filterContoursMinArea = 30.0;
+		double filterContoursMinArea = 0;
 		double filterContoursMinPerimeter = 7.0;
-		double filterContoursMinWidth = 13.0;
-		double filterContoursMaxWidth = 1000.0;
+		double filterContoursMinWidth = 0;
+		double filterContoursMaxWidth = 100;
 		double filterContoursMinHeight = 7.0;
-		double filterContoursMaxHeight = 1000.0;
+		double filterContoursMaxHeight = 100.0;
 		double[] filterContoursSolidity = {0.0, 100};
 		double filterContoursMaxVertices = 1000000.0;
 		double filterContoursMinVertices = 0.0;
