@@ -91,7 +91,11 @@ public class Robot extends IterativeRobot {
 		m_myRobot = new DifferentialDrive(m_left, new PWMTalonSRX(0));
 		m_rightStick = new Joystick(1);
 		xbox = new XboxController(0);
+		UsbCamera camera2 = CameraServer.getInstance().startAutomaticCapture();
+		camera2.setFPS(60);
+		camera2.setResolution(360, 360);
 		UsbCamera camera = CameraServer.getInstance().startAutomaticCapture();
+		camera.setExposureManual(20);
 		camera.setResolution(IMG_WIDTH, IMG_HEIGHT);
 		
 		visionThread = new VisionThread(camera, new GripPipeline(), pipeline -> {
@@ -121,7 +125,7 @@ public class Robot extends IterativeRobot {
 
 	@Override
 	public void teleopPeriodic() {
-		Cam.set(false);
+		c.setClosedLoopControl(false);
 		double centerX;
     synchronized (imgLock) {
         centerX = this.centerX;
@@ -150,16 +154,18 @@ public class Robot extends IterativeRobot {
 		m_myRobot.curvatureDrive(m_rightStick.getY()*driveSpeed,m_rightStick.getZ()*0.7,true);
 
 		
-		if (clickedB) {
-			c.setClosedLoopControl(true);
-		}
-		else { c.setClosedLoopControl(false);
-		}
+	
+		
+		
 		
 	if (clickedX) {
 		Cam.set(true);
-		m_myRobot.curvatureDrive(0.3, turn * 0.005,true);
 	}
+	else{Cam.set(false);}
+	if (clickedX && clickedB)
+		{m_myRobot.curvatureDrive(0.3, turn * 0.008,true);
+		}
+		else {m_myRobot.curvatureDrive(m_rightStick.getY()*driveSpeed,m_rightStick.getZ()*0.7,true);}
 	
 		
 	if (clickedY){
@@ -176,7 +182,7 @@ public class Robot extends IterativeRobot {
 	
         
             lift.set(xbox.getY(Hand.kRight));
-         System.out.println("TESTREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+         System.out.println("teleop code?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.  ");
 	}
 	
 	public void autonomousInit() {
@@ -185,7 +191,7 @@ public class Robot extends IterativeRobot {
 	}
    
 	   public void autonomousPeriodic(){
-		System.out.println("I'm gonna run in autonomous");
+		System.out.println("I'm gonna run in autonomous................................................................");
 		teleopPeriodic();
 	   }
 	   
@@ -194,6 +200,10 @@ public class Robot extends IterativeRobot {
 	   }
          
 	}
+
+
+
+
 
 
 
