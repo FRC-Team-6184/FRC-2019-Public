@@ -3,7 +3,7 @@
 We're a homemade, nonprofit FIRST Robotics Competition team from Leon High School in Tallahassee, Florida. Our team is made up of high 
 school age members, adult mentors, and an array of amazing sponsors. Primarily, our organization's goal is to cultivate members' 
 critical thinking and collaborative skills by providing an avenue in which programmers, designers, artists, and builders can channel 
-their ideas and creativity into the field of STEAM. We want to help build the visionaries and leaders of tomorrow. -- taken off our website
+their ideas and creativity into the field of STEM. We want to help build the visionaries and leaders of tomorrow. -- taken off our website
 
 This GitHub is designed to display our seasonal code and display it to the public and anyone who is interested. Along with any other
 experimental personal projects, such as making a robot follow at a distance based solely on vision feedback. 
