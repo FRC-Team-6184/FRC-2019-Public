@@ -8,9 +8,7 @@ their ideas and creativity into the field of STEAM. We want to help build the vi
 This GitHub is designed to display our seasonal code and display it to the public and anyone who is interested. Along with any other
 experimental personal projects, such as making a robot follow at a distance based solely on vision feedback. 
 
-My name is Nick I run the programming team at Leon robotics and have a mission to teach java, if anyone wants me to teach them first 
-programming or general programming, feel free to contact me. As my knowledge is limited, I may only be good for beginners. I am 
-available any time and am willing to work with you to find an appropriate time. (send me an email to the email below and ask for Nick)
+My name is Nick I run the programming team at Leon robotics, if anyone has general questions or is interested in joining our team, feel free to contact me. I am available any time. (send me an email to the email below and ask for Nick)
 
 if there are any requests for something that isn’t available on the GitHub send it to Leonroboticsteam@gmail.com.
 Thank you!
@@ -43,14 +41,12 @@ First- http://first.wpi.edu/FRC/roborio/release/docs/java/
 *  (http://first.wpi.edu/FRC/roborio/release/eclipse/) nessisary repository
 
 
-## Versioning
-
-Some portions of our github may gain dust overtime, versions are labeled with v1- v(infinity) but restart from v1 after every year
 
 
 ## Authors
 
 * **Nick    V** - *Github* (https://github.com/Yellownv)
+  **Donavyn G**
 People who wrote the actual programs are listed as contributors and can be found at the link below.
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
