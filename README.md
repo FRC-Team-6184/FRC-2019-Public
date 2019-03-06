@@ -46,8 +46,8 @@ First- http://first.wpi.edu/FRC/roborio/release/docs/java/
 ## Authors
 
 * **Nick    V** - *Github* (https://github.com/Yellownv)
-* **Donavyn G**
-People who wrote the actual programs are listed as contributors and can be found at the link below.
+
+* People who wrote the actual programs are listed as contributors and can be found at the link below.
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
