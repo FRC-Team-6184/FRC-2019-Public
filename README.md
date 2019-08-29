@@ -1,4 +1,5 @@
 # Leon Robotics GitHub
+## Frc switched to gradle so this is not backwards compatable
 
 We're a homemade, nonprofit FIRST Robotics Competition team from Leon High School in Tallahassee, Florida. Our team is made up of high 
 school age members, adult mentors, and an array of amazing sponsors. Primarily, our organization's goal is to cultivate members' 
